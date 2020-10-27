@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/misc/blankfile:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
+    $(LOCAL_PATH)/misc/blankfile:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.default.so \
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ft5346.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5346.kl \
@@ -67,6 +71,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh
+
+PRODUCT_PACKAGES += \
+    init.ir.rc \
+    init.ir.sh
 
 # Sensors
 PRODUCT_COPY_FILES += \
