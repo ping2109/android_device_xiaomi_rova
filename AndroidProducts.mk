@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_rova.mk
+    $(LOCAL_DIR)/radiant_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_rova-user \
-    ssos_rova-userdebug \
-    ssos_rova-eng
+    radiant_rova-user \
+    radiant_rova-userdebug \
+    radiant_rova-eng
